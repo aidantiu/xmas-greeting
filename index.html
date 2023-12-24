@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Card</title>
+
+    <!-- Link to an external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main container for the Christmas card -->
+    <div class="card">
+      <!-- Left side of the card with front and back faces -->
+      <div class="left-card">
+        <!-- Front face of the card  -->
+        <div class="card-face" id="front">
+          <img src="img/cover1.png" alt="" />
+        </div>
+        <!-- Back face of the card-->
+        <div class="card-face" id="back">
+          <img src="img/cover2.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Right side of the card -->
+      <div class="right-card">
+        <!-- Greeting heading -->
+        <h1>Merry Christmas!</h1>
+        <!-- Christmas message -->
+        <p>
+          Wishing you a joyous Christmas filled with love, laughter, and the
+          warmth of cherished moments. May this festive season bring you closer
+          to your loved ones and fill your heart with gratitude for the moments
+          we share.
+        </p>
+        <!-- Sender's name -->
+        <p>Aidan Tiu</p>
+      </div>
+    </div>
+
+    <!-- JavaScript script for toggling the 'open' class on click -->
+    <script>
+      document.querySelector(".card").addEventListener("click", () => {
+        document.querySelector(".card").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
